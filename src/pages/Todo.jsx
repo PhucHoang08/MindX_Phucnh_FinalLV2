@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import { Tabs } from 'antd';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import {useLocation, useNavigate } from 'react-router-dom';
 import All from '../components/All/All';
 import Active from '../components/Active/Active';
 import Completed from '../components/Completed/Completed';
@@ -48,12 +48,12 @@ function Todo() {
                 active: false
             },
             {
-                id: Date.now()+ 1234,
+                id: Date.now() + 1234,
                 text: "Do coding challenges 2",
                 active: false
             },
             {
-                id: Date.now()+345678,
+                id: Date.now() + 345678,
                 text: "Do coding challenges 3",
                 active: false
             }
